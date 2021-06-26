@@ -1,6 +1,6 @@
 # Friends Names API 👋🧑👩
 
-+ An API that will return random Friends Names 🕵️🕵️‍♀️
++ An API that will return random Friends Names 🕵️🕵️‍♀️👨‍🔬
 + + Dedicated To All Friends Lovers ❤️
 
 ## Usage:
