@@ -12,7 +12,7 @@
 - Change `all` to parameter `?number=` to specify the number of Friends Names you want to receive.
 - Change `all` to parameter `?index=` to specify the index of the Friends Name you are targeting.
 
-This project is hosted by [Heroku](https://www.heroku.com/)
+This project is hosted by [Heroku](https://www.heroku.com/).
 
 ## Rebuild the project
 
@@ -22,6 +22,23 @@ This project is hosted by [Heroku](https://www.heroku.com/)
 4. Run `pip install requirements.txt`.
 5. Run `python app.py`.
 6. App starts at `http://localhost:5000` by default, but can be configured with a `.env` file.
+
+## Run Dockerfile
+
+1. cd into the repository.
+2. Run the following command to build the docker file:-
+
+   ```bash
+   docker build -t friends-name-api:1.0.0 `pwd`
+   ```
+
+3. Run the built docker image with the following command:-
+
+   ```bash
+   docker run -d -p 80:5000 friends-name-api:1.0.0
+   ```
+
+4. Visit the URL localhost/ in the browser to view the data.
 
 ## Example
 
@@ -47,3 +64,8 @@ This project is hosted by [Heroku](https://www.heroku.com/)
   }
 ]
 ```
+
+## Contributors
+
+1. Sreeram A J <sreeramzeno@gmail.com>
+2. Sashwat K <sashwat0001@gmail.com>

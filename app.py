@@ -1,7 +1,6 @@
 import flask
 from random import randrange
 import json
-
 from config import PORT
 
 app = flask.Flask(__name__)
@@ -11,9 +10,12 @@ with open("data.json") as json_file:
     data = json.load(json_file)
     dataLength = len(data)
 
+
 @app.route('/')
 def home():
-    return '''<h1>Welcome to Friend Names API</h1> <a href="https://github.com/Zenomodiff/Friends-Names-API" target="blank">Documentation</a>'''
+    return "<h1>Welcome to Friend Names API</h1> \
+        <a href='https://github.com/Zenomodiff/Friends-Name-API' \
+            target='blank'>Documentation</a>"
 
 
 @app.route('/api/Friends-Names/all', methods=['GET'])
@@ -21,9 +23,11 @@ def api_all():
     print('Database length: ', len(data))
     return flask.jsonify(data)
 
+
 @app.errorhandler(404)
 def page_not_found(e):
-    return "<h1>Error 404:</1><p>The resource could not be found. Please check your query</p>", 404
+    return "<h1>Error 404:</1><p>The resource could not be found. \
+    Please check your query</p>", 404
 
 
 @app.route('/api/Friends-Names', methods=['GET'])
@@ -39,8 +43,13 @@ def api_number():
             results.append(data[requestIndex])
     else:
         return page_not_found(404)
-        
+
     return flask.jsonify(results)
 
+
+def main():
+    app.run(debug=True, host='0.0.0.0', port=PORT)
+
+
 if __name__ == '__main__':
-    app.run(debug = True, host = '0.0.0.0', port= PORT)
+    main()
