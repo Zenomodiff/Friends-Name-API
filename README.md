@@ -64,8 +64,3 @@ This project is hosted by [Heroku](https://www.heroku.com/).
   }
 ]
 ```
-
-## Contributors
-
-1. Sreeram A J <sreeramzeno@gmail.com>
-2. Sashwat K <sashwat0001@gmail.com>
