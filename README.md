@@ -7,8 +7,8 @@
 
 ## Usage
 
-- ### [`https://friendsnameapi.herokuapp.com/`](https://friends-names-api.herokuapp.com/api/Friends-Names?number=1) to get the documentation.
-- ### [`https://friendsnameapi.herokuapp.com/api/Friends-Names/all`](https://friends-names-api.herokuapp.com/api/Friends-Names?number=1) to get all the Friends Names at once.
+- ### [`https://friendsnameapi.herokuapp.com/`](https://friendsnameapi.herokuapp.com/) to get the documentation.
+- ### [`https://friendsnameapi.herokuapp.com/api/Friends-Name/all`](https://friendsnameapi.herokuapp.com/api/Friends-Name/all) to get all the Friends Names at once.
 - Change `all` to parameter `?number=` to specify the number of Friends Names you want to receive.
 - Change `all` to parameter `?index=` to specify the index of the Friends Name you are targeting.
 
@@ -28,7 +28,7 @@ This project is hosted by [Heroku](https://www.heroku.com/).
 
 ## Example
 
-- ### [https://friendsnameapi.herokuapp.com/api/Friends-Names?number=1](https://friendsnameapi.herokuapp.com/api/Friends-Names?number=1) returns: ↓
+- ### [https://friendsnameapi.herokuapp.com/api/Friends-Name?number=1](https://friendsnameapi.herokuapp.com/api/Friends-Name?number=1) returns: ↓
 
 ```JSON
 [
@@ -38,7 +38,7 @@ This project is hosted by [Heroku](https://www.heroku.com/).
 ]
 ```
 
-- ### [https://friendsnameapi.herokuapp.com/api/Friends-Names?number=2](https://friendsnameapi.herokuapp.com/api/Friends-Names?number=2) returns: ↓
+- ### [https://friendsnameapi.herokuapp.com/api/Friends-Name?number=2](https://friendsnameapi.herokuapp.com/api/Friends-Name?number=2) returns: ↓
 
 ```JSON
 [
